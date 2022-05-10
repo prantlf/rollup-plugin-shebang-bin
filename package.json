@@ -62,18 +62,18 @@
     ]
   },
   "dependencies": {
-    "@rollup/pluginutils": "^4.1.2",
+    "@rollup/pluginutils": "^4.2.1",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "magic-string": "^0.25.7"
+    "magic-string": "^0.26.1"
   },
   "devDependencies": {
-    "c8": "^7.11.0",
-    "eslint": "^8.7.0",
-    "rollup": "^2.66.0",
-    "tehanu": "^0.1.0",
+    "c8": "^7.11.2",
+    "eslint": "^8.15.0",
+    "rollup": "^2.72.1",
+    "tehanu": "^0.2.2",
     "tehanu-repo-coco": "^0.0.2",
-    "tehanu-teru": "^0.1.2"
+    "tehanu-teru": "^0.2.2"
   },
   "peerDependencies": {
     "rollup": "^2"

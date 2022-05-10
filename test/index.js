@@ -1,4 +1,4 @@
-const test = require('tehanu')(__filename)
+const test = require('tehanu')('plugin')
 const { stat } = require('fs/promises')
 const { join } = require('path')
 const { equal, ok } = require('assert')
