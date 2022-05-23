@@ -26,11 +26,10 @@
     "node": ">= 14"
   },
   "scripts": {
-    "lint": "eslint *.js test/*.js",
-    "fix": "eslint --fix *.js test/*.js",
+    "lint": "denolint",
     "check": "teru test",
     "cover": "c8 teru test",
-    "test": "npm run lint && npm run check"
+    "test": "denolint && c8 teru test"
   },
   "c8": {
     "check-coverage": true,
@@ -38,7 +37,7 @@
       "index.js"
     ],
     "reporter": [
-      "text-summary",
+      "text",
       "lcov"
     ],
     "branches": 100,
@@ -63,17 +62,17 @@
   },
   "dependencies": {
     "@rollup/pluginutils": "^4.2.1",
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/git": "^10.0.1",
-    "magic-string": "^0.26.1"
+    "magic-string": "^0.26.2"
   },
   "devDependencies": {
-    "c8": "^7.11.2",
-    "eslint": "^8.15.0",
-    "rollup": "^2.72.1",
-    "tehanu": "^0.2.2",
-    "tehanu-repo-coco": "^0.0.2",
-    "tehanu-teru": "^0.2.2"
+    "@node-rs/deno-lint": "^1.13.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "c8": "^7.11.3",
+    "rollup": "^2.74.1",
+    "tehanu": "^1.0.0",
+    "tehanu-repo-coco": "^1.0.0",
+    "tehanu-teru": "^1.0.0"
   },
   "peerDependencies": {
     "rollup": "^2"
