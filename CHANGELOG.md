@@ -1,3 +1,10 @@
+## [0.0.4](https://github.com/prantlf/rollup-plugin-shebang-bin/compare/v0.0.3...v0.0.4) (2022-06-03)
+
+
+### Bug Fixes
+
+* Fix homepage URL ([f50c7a0](https://github.com/prantlf/rollup-plugin-shebang-bin/commit/f50c7a083dbe7e6348861a7f0f430e64778d9d3f))
+
 ## [0.0.3](https://github.com/prantlf/rollup-plugin-shebang-bin/compare/v0.0.2...v0.0.3) (2022-05-23)
 
 
