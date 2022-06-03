@@ -7,7 +7,7 @@ specifiers:
   '@semantic-release/git': ^10.0.1
   c8: ^7.11.3
   magic-string: ^0.26.2
-  rollup: ^2.74.1
+  rollup: ^2.75.5
   tehanu: ^1.0.0
   tehanu-repo-coco: ^1.0.0
   tehanu-teru: ^1.0.0
@@ -21,7 +21,7 @@ devDependencies:
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/git': 10.0.1
   c8: 7.11.3
-  rollup: 2.74.1
+  rollup: 2.75.5
   tehanu: 1.0.0
   tehanu-repo-coco: 1.0.0
   tehanu-teru: 1.0.0_tehanu@1.0.0
@@ -682,8 +682,8 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup/2.74.1:
-    resolution: {integrity: sha512-K2zW7kV8Voua5eGkbnBtWYfMIhYhT9Pel2uhBk2WO5eMee161nPze/XRfvEQPFYz7KgrCCnmh2Wy0AMFLGGmMA==}
+  /rollup/2.75.5:
+    resolution: {integrity: sha512-JzNlJZDison3o2mOxVmb44Oz7t74EfSd1SQrplQk0wSaXV7uLQXtVdHbxlcT3w+8tZ1TL4r/eLfc7nAbz38BBA==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
