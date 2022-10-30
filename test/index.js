@@ -1,9 +1,13 @@
-const test = require('tehanu')('plugin')
-const { stat } = require('fs/promises')
-const { join } = require('path')
-const { equal, ok } = require('assert')
-const { rollup } = require('rollup')
-const shebang = require('..')
+import tehanu from 'tehanu'
+import { fileURLToPath } from 'url'
+import { stat } from 'fs/promises'
+import { dirname, join } from 'path'
+import { equal, ok } from 'assert'
+import { rollup } from 'rollup'
+import shebang from '../lib/index.js'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const test = tehanu(import.meta.url)
 
 function compile(name, options) {
   return rollup({

@@ -18,18 +18,26 @@
   "bugs": {
     "url": "http://github.com/prantlf/rollup-plugin-shebang-bin/issues"
   },
-  "main": "index.js",
+  "type": "module",
+  "module": "lib/index.js",
+  "main": "lib/index.cjs",
+  "types": "lib/index.d.ts",
+  "exports": {
+    "require": "./lib/index.cjs",
+    "import": "./lib/index.js"
+  },
   "files": [
-    "index.js"
+    "lib"
   ],
   "engines": {
-    "node": ">= 14"
+    "node": ">= 14.18"
   },
   "scripts": {
-    "lint": "denolint",
-    "check": "teru test",
-    "cover": "c8 teru test",
-    "test": "denolint && c8 teru test"
+    "prepare": "rollup -c",
+    "lint": "denolint && tsc --noEmit test/types.ts",
+    "check": "teru test/index.cjs && teru-esm test/*.js",
+    "cover": "c8 teru-esm test/*.js",
+    "test": "denolint && tsc --noEmit test/types.ts && teru test/index.cjs && c8 teru-esm test/*.js"
   },
   "c8": {
     "check-coverage": true,
@@ -61,21 +69,24 @@
     ]
   },
   "dependencies": {
-    "@rollup/pluginutils": "^4.2.1",
-    "magic-string": "^0.26.2"
+    "@rollup/pluginutils": "^5.0.2",
+    "magic-string": "^0.26.7"
   },
   "devDependencies": {
-    "@node-rs/deno-lint": "^1.13.1",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "c8": "^7.11.3",
-    "rollup": "^2.75.5",
-    "tehanu": "^1.0.0",
+    "@types/node": "^18.11.7",
+    "c8": "^7.12.0",
+    "denolint": "^2.0.4",
+    "rollup": "^3.2.3",
+    "rollup-plugin-shebang-bin": "link:",
+    "tehanu": "^1.0.1",
     "tehanu-repo-coco": "^1.0.0",
-    "tehanu-teru": "^1.0.0"
+    "tehanu-teru": "^1.0.0",
+    "typescript": "^4.8.4"
   },
   "peerDependencies": {
-    "rollup": "^2"
+    "rollup": "^2 || ^3"
   },
   "keywords": [
     "rollup",
