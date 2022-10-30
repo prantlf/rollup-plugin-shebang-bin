@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-shebang-bin",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Richly configurable rollup plugin for preserving or inserting shebang (hashbang) and making scripts executable.",
   "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantl.tk)",
   "license": "MIT",

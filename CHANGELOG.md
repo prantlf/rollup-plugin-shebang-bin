@@ -1,3 +1,10 @@
+## [0.0.5](https://github.com/prantlf/rollup-plugin-shebang-bin/compare/v0.0.4...v0.0.5) (2022-10-30)
+
+
+### Bug Fixes
+
+* Upgrade dependencies, support Rollup 3, CJS and TypeScript ([bfb8dbb](https://github.com/prantlf/rollup-plugin-shebang-bin/commit/bfb8dbb71b9bbb1146e50f5e980666fe936f7551))
+
 ## [0.0.4](https://github.com/prantlf/rollup-plugin-shebang-bin/compare/v0.0.3...v0.0.4) (2022-06-03)
 
 
