@@ -1,3 +1,10 @@
+## [0.0.6](https://github.com/prantlf/rollup-plugin-shebang-bin/compare/v0.0.5...v0.0.6) (2023-10-08)
+
+
+### Bug Fixes
+
+* Upgrade dependencies, support Rollup 4 ([738f4cb](https://github.com/prantlf/rollup-plugin-shebang-bin/commit/738f4cbf936e20ca116d355a73ddf6c2ca5f2fc0))
+
 ## [0.0.5](https://github.com/prantlf/rollup-plugin-shebang-bin/compare/v0.0.4...v0.0.5) (2022-10-30)
 
 
