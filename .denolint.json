@@ -1,5 +1,11 @@
 {
+  "files": {
+    "exclude": ["test/samples"]
+  },
   "rules": {
-    "tags": ["recommended"]
+    "tags": ["recommended"],
+    "exclude": [
+      "no-var"
+    ]
   }
 }
