@@ -1,8 +1,8 @@
 import tehanu from 'tehanu'
-import { fileURLToPath } from 'url'
-import { stat } from 'fs/promises'
-import { dirname, join } from 'path'
-import { equal, ok } from 'assert'
+import { fileURLToPath } from 'node:url'
+import { stat } from 'node:fs/promises'
+import { dirname, join } from 'node:path'
+import { equal, ok } from 'node:assert'
 import { rollup } from 'rollup'
 import shebang from '../lib/index.js'
 
