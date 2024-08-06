@@ -119,7 +119,7 @@ If an output file should become executable permissions.
 
 ## License
 
-Copyright (C) 2022 Ferdinand Prantl
+Copyright (C) 2022-2024 Ferdinand Prantl
 
 Licensed under the [MIT License].
 
